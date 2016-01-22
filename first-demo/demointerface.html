@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StackHive Blog | Precision Drag Drop</title>
+    <meta name="description" content="Building a cross frame drag-drop interface using HTML5 for precise insertions">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="./assets/css/demointerface.css" rel="stylesheet">
+</head>
+<body>
+<div id="dragitemslist">
+    <h3>Draggable Item List</h3>
+    <div>
+        <ul id="dragitemslistcontainer">
+            <li draggable="true"><i class="fa fa-header"></i><p>Header</p></li>
+            <li draggable="true"><i class="fa fa-bar-chart"></i><p>Chart</p></li>
+            <li draggable="true"><i class="fa fa-envelope"></i><p>Contact</p></li>
+        </ul>
+    </div>
+</div>
+<div id="clientframe-container">
+    <iframe id="clientframe" src="./client.html" frameborder="0"></iframe>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="./assets/js/dnd.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+html, body { height: 100%; padding: 0px; margin: 0px; overflow: hidden;}
+#stackhive-placement
+{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+}
+.navbar
+{
+    height: 55px;
+    background-color: rgba(254, 254, 254, 0.95);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.13);
+    border: none;
+}
+.navbar-brand
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 35px;
+    margin-top: 8px;
+    position: relative;
+    left: 10px;
+}
+.navbar-brand > img
+{
+    height: 100%;
+}
+
+a.btn,a.btn:hover.a.btn:active;
+{
+    outline:none;
+}
+.navbar .navbar-nav > li > a
+{
+    /* border-left:solid 1px #d8d8d8; */
+    color:#3d3d3d;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.navbar .navbar-nav > li:last-child > a
+{
+    /* border-right:solid 1px #d8d8d8; */
+}
+.navbar .navbar-nav > li > a.stackhive-btn
+{
+    border:none;
+    background-color: rgb(214, 3, 76);
+    color: white;
+    /* padding: 8px; */
+    /* font-size: 15px; */
+    /* margin-top: 8px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar .navbar-nav > li > a.stackhive-btn i
+{
+    transition:.3s all;
+    font-size: 15px;
+    margin-left: 2px;
+}
+.navbar .navbar-nav > li > a.stackhive-btn:hover i
+{
+    transform: translateX(5px);
+}
+.navbar .navbar-nav > li > a.github-btn
+{
+    border:none;
+    background-color: rgb(18, 56, 79);
+    color: white;
+    /* padding: 8px; */
+    /* font-size: 15px; */
+    /* margin-top: 8px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar .navbar-nav > li > a.github-btn i
+{
+    transition:.3s all;
+    font-size: 15px;
+    margin-left: 2px;
+}
+.navbar .navbar-nav > li > a.github-btn:hover i
+{
+    font-size: 20px;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+#dragitemslist h3
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px black;
+}
+#dragitemslist
+{
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    background: rgb(18, 56, 79);
+    color: rgb(215, 215, 215);
+    /* border-bottom: 1px solid rgb(17, 33, 42); */
+    /* box-shadow: 0px 1px 2px rgb(22, 42, 55); */
+    height: 170px;
+}
+#dragitemslist + div
+{
+    margin-top: 220px;
+    border-top: 5px solid rgb(0, 187, 255);
+}
+#dragitemslistcontainer
+{
+    list-style: none;
+    padding: 0px;
+}
+#dragitemslistcontainer > li
+{
+    display:inline-block;
+    margin-right:2px;
+    padding: 10px 15px;
+    cursor: move;
+    color: white;
+    border: 1px solid;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 56, 79);
+    text-shadow: 0px 1px 1px black;
+}
+#dragitemslistcontainer > li i
+{
+    font-size:40px;
+    margin-bottom:10px;
+    /* color: rgb(0, 187, 255); */
+}
+#dragitemslistcontainer > li p
+{
+    margin:0px;
+}
+#clientframe
+{
+    height:100%;
+    width:100%;
+}
+#clientframe-container
+{
+    height: -webkit-calc(100% - 220px);
+    height: calc(100% - 220px);
+    height: -moz-calc(100% - 220px);
+    height: -ms-calc(100% - 220px);
+    height: -o-calc(100% - 220px);
+    width: 100%;
+}

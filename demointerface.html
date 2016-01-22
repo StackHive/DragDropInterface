@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Building an awesome Drag Drop Interface - by StackHive</title>
+    <meta name="description" content="Building a cross frame drag-drop interface using HTML5 for precise insertions">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="./assets/css/demointerface.css" rel="stylesheet">
+</head>
+<body>
+<div id="stackhive-placement">
+    <nav id="stackhive_navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sh-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" title="StackHive | Quick Responsive Front-End Development In The Browser." href="./"><img src="http://cdn.stackhive.com/direct/site/assets/img/logo/shortlogo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="sh-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a class="stackhive-btn" href="http://stackhive.com?r=dnd" target="_blank">Checkout StackHive <i class="fa fa-chevron-right"></i></a></li>
+                   <li><a class="github-btn" href="https://github.com/StackHive" target="_blank">Fork it <i class="fa fa-github"></i></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div id="dragitemslist">
+    <h3>Element List</h3>
+    <div>
+        <ul id="dragitemslistcontainer">
+            <li draggable="true" data-insert-html="<h1>HEADER GOES HERE</h1>"><i class="fa fa-header"></i><p>Header</p></li>
+            <li draggable="true" data-insert-html="<img src='http://blogs-images.forbes.com/anthonykosner/files/2014/06/us-browser-share-adobe-index-2014.jpg'>"><i class="fa fa-bar-chart"></i><p>Chart Image</p></li>
+            <li draggable="true" data-insert-html='<div class="well login-box"> <form action=""> <legend>Login</legend> <div class="form-group"> <label for="username-email">E-mail or Username</label> <input value="" id="username-email" placeholder="E-mail or Username" type="text" class="form-control"/> </div><div class="form-group"> <label for="password">Password</label> <input id="password" value="" placeholder="Password" type="text" class="form-control"/> </div><div class="form-group text-center"> <button class="btn btn-danger btn-cancel-action">Cancel</button> <input type="submit" class="btn btn-success btn-login-submit" value="Login"/> </div></form> </div>'><i class="fa fa-sign-in"></i><p>Login Form</p></li>
+        </ul>
+    </div>
+</div>
+<div id="clientframe-container">
+    <iframe id="clientframe" src="./client.html" frameborder="0"></iframe>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="./assets/js/dnd.js"></script>
+</body>
+</html>
